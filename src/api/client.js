@@ -2,11 +2,11 @@
 
 // src/api/client.js
 import axios from 'axios';
-import {
-  getAccess, getRefresh, setAccess, clearAll,
-} from '../utils/storage';
+import {  getAccess, getRefresh, setAccess, clearAll,} from '../utils/storage';
 import { ENDPOINTS, REQ } from '../config/apiContract';
 
+
+const DEMO_MODE = import.meta.env.VITE_API_BASE_URL
 
 const apiClient = axios.create({
   baseURL: import.meta.env.VITE_API_BASE_URL,
